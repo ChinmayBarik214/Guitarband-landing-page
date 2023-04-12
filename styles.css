@@ -161,6 +161,12 @@ a {
 .feature {
   display: flex;
 }
+@media (max-width: 550px) {
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #features .icon {
   display: flex;
   justify-content: center;
@@ -172,22 +178,19 @@ a {
 }
 @media (max-width: 550px) {
   #features .icon {
-      display: none;
+      height: 75px;
   }
 }
 #features .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80vw;
-  height: 125px;
+  width: 70vw;
   padding: 5px;
 }
 @media (max-width: 550px) {
   #features .desc {
       width: 100%;
-      height: 150px;
-      padding: 0;
       text-align: center;
   }
 }
